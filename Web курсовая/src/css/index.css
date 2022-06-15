@@ -1,0 +1,170 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.baner {
+    z-index: 5;
+    font-weight: center;
+    background-color: rgb(0, 90, 126);
+    text-decoration: none;
+    position: fixed;
+    padding-right: 1150px;
+    padding-top: 20px;
+    top: 0;
+    left: 0;
+}
+
+.baner img {
+    position: absolute;
+    z-index: 3;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.baner h1 {
+    color: aquamarine;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.page .img1 {
+    margin-top: 160px;
+    margin-left: 550px;
+}
+
+.page .img1 h1 {
+    position: relative;
+    font-size: 30;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 65px;
+    left: 70px;
+}
+
+.page .text {
+    width: 350px;
+    height: 40px;
+    margin-top: -40px;
+    margin-left: 550px;
+}
+
+.page .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 898px;
+}
+
+.page .dropdown .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 10.5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 11px;
+    font-size: 16px;
+    border: none;
+}
+
+.page .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.page .dropdown .dropdown-content a {
+    color: black;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.page .dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.page .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.page .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.page .col .list {
+    list-style: none;
+    margin-left: 160px;
+}
+
+.page .col {
+    margin-left: 550px;
+    margin-right: 430px;
+    background-color: rgb(157, 255, 255);
+}
+
+.page .but4 {
+    position: absolute;
+    margin-top: -40px;
+}
+
+.page .but4 a {
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 15px 10px 15px;
+    margin-left: 500px;
+    color: #ffffff;
+    background-color: #4CAF50;
+}
+
+.page .but5 {
+    position: absolute;
+    margin-top: -40px;
+}
+
+.page .but5 a {
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 15px 10px 15px;
+    margin-left: 450px;
+    color: #ffffff;
+    background-color: #4CAF50;
+}
+
+.page .but6 {
+    position: absolute;
+    margin-top: -40px;
+}
+
+.page .but6 a {
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    padding: 10px 15px 10px 15px;
+    margin-left: 370px;
+    background-color: #dee03d;
+}
+
+.page .but4 a:hover {
+    color: #fff;
+    background: rgb(32, 136, 46);
+}
+
+.page .but5 a:hover {
+    color: #fff;
+    background: rgb(32, 136, 46);
+}
+
+.page .but6 a:hover {
+    color: #fff;
+    background: rgb(189, 186, 43);
+}
