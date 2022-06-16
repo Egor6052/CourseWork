@@ -1,5 +1,6 @@
 package Package;
-import java.sql.Date;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 
 //для коректности даты
 public class Util {
