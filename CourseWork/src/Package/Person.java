@@ -1,8 +1,8 @@
 package Package;
 
 import java.io.Serializable;
-import java.sql.Date;
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Person implements Serializable {
     private String namePatient;
@@ -15,14 +15,14 @@ public class Person implements Serializable {
     private String payment;
     private double duty;
 
-    public Person(String namePatient, String surnamePatient, String patronymicPatient, int cardNumber, String work, double priceWork, LocalDate dateCompletionWork, String payment, double duty) {
+    public Person(String namePatient, String surnamePatient, String patronymicPatient, int cardNumber, String work, double priceWork, Date dateCompletionWork, String payment, double duty) {
         this.setNamePatient(namePatient);
         this.setSurnamePatient(surnamePatient);
         this.setPatronymicPatient(patronymicPatient);
         this.setCardNumber(cardNumber);
         this.setWok(work);
         this.setPriceWork(priceWork);
-        this.setDateCompletionWork(Date.valueOf(dateCompletionWork));
+        this.setDateCompletionWork(dateCompletionWork);
         this.setPayment(payment);
         this.setDuty(duty);
     }
@@ -86,13 +86,12 @@ public class Person implements Serializable {
     //    дата выполнения работы;
     public void setDateCompletionWork(Date dateCompletionWork) {
         //Год должен быть больше или равер теперешнему;
-        if (dateCompletionWork.getYear() < LocalDate.now().getYear()) {
+        if (dateCompletionWork.getYear() > LocalDate.now().getYear()) {
             this.dateCompletionWork = dateCompletionWork;
-            this.dateCompletionWork = new Date(0, 0, 0);
         } else {
-            this.dateCompletionWork = Util.getCorrectDate(dateCompletionWork);
+        System.out.println("Error!");
         }
-    }
+}
 
     //   оплата;
     public void setPayment(String payment) {
@@ -128,8 +127,8 @@ public class Person implements Serializable {
         return priceWork;
     }
 
-    public Date getDateCompletionWork() {
-        return dateCompletionWork;
+    public String getDateCompletionWork() {
+        return Util.getCorrectDate(dateCompletionWork);
     }
 
     public String getPayment() {
