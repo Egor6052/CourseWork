@@ -43,9 +43,9 @@ public class HttpHandlerServer implements HttpHandler {
 
         StringBuilder response = new StringBuilder("{");
         String info = new BufferedReader(new FileReader("src/Package/Database.txt")).readLine();
-        if (requestParamValues[0].equals("info")) {
+
         response.append(new BufferedReader(new FileReader("src/Package/Database.txt")).readLine());
-    }
+        
         httpExchange.sendResponseHeaders(200, response.length());
         outputStream.write(response.toString().getBytes());
         outputStream.flush();
