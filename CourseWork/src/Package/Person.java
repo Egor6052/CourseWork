@@ -86,12 +86,12 @@ public class Person implements Serializable {
     //    дата выполнения работы;
     public void setDateCompletionWork(Date dateCompletionWork) {
         //Год должен быть больше или равер теперешнему;
-        if (dateCompletionWork.getYear() > LocalDate.now().getYear()) {
+      //  if (dateCompletionWork.getYear() > LocalDate.now().getYear()) {
             this.dateCompletionWork = dateCompletionWork;
-        } else {
-        System.out.println("Error!");
-        }
-}
+       // } else {
+      //  System.out.println("Error!");
+      //  }
+    }
 
     //   оплата;
     public void setPayment(String payment) {
