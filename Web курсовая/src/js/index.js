@@ -16,7 +16,7 @@ function templateGenerator(list) {
     $list.innerHTML = template;
 }
 
-fetch('http://localhost:8001/back?name=JSON&count=2')
+fetch('http://localhost:8001/back')
     .then(function(responce) {
         return responce.json();
     })
