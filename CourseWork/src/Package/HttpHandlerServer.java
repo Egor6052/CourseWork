@@ -11,9 +11,9 @@ public class HttpHandlerServer implements HttpHandler {
     @Override
     public void handle(HttpExchange httpExchange) throws IOException {
         String[] requestParams = null;
-        if ("GET".equals(httpExchange.getRequestMethod())) {
-            requestParams = getRequestParams(httpExchange);
-        }
+//         if ("GET".equals(httpExchange.getRequestMethod())) {
+//             requestParams = getRequestParams(httpExchange);
+//         }
         if ("POST".equals(httpExchange.getRequestMethod())) {
             requestParams = getRequestParams(httpExchange);
         }
