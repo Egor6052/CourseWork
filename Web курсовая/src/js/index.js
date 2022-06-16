@@ -28,8 +28,6 @@ fetch('http://localhost:8001/back')
 $field.addEventListener('input', function() {
     let text = this.value.toLowerCase();
     let filterdPersons = persons.filter(function(el) {
-        // if(el.name.toLowerCase().indexOf(text) != (-1)) return true;
-        // else return false;
         return ~el.name.toLowerCase().indexOf(text);
 
     });
